@@ -6,7 +6,7 @@ This script will update Ubuntu sources.list, update all repositories and install
 
 After the Tor service is installed, it will generate a .onion V3 domain and enable the Tor service on the server.
 
-Finally it will install aaPanel, at the end of the installation it will show the aaPanel login data and the .onion domain configured on the server.
+Finally it will install [aaPanel](https://www.aapanel.com), at the end of the installation it will show the aaPanel login data and the .onion domain configured on the server.
 
 To finish the installation, go to aaPanel, choose your web server between Apache or Nginx, PHP Version and Database type, Tor service is compatible with all services except email services.
 
@@ -32,8 +32,11 @@ After completion, you will see aaPanel login data and generated .onion domain, p
 
 Now you have a complete control panel to manage your Tor server :)
 
-Note that you need to have git installed on your server, if not, run it before starting the Tor installation:
+**Note that you need to have git installed on your server, if not, run it before starting the Tor installation:**
 ```
 sudo apt install git
 ```
 
+For security advice, change aaPanel username, password and port.
+
+Do not use the https protocol for .onion domains, or try to install SSL for a .onion domain. Let's Encrypt does not support .onion domains, if you need to use the https protocol with SSL, talk to our team and we can help, but remember that Tor network encryption alone is enough to keep you, your users safe and anonymous.
