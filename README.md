@@ -29,3 +29,9 @@ bash tor.sh
 After completion, you will see aaPanel login data and generated .onion domain, please keep this information safe.
 
 Now you have a complete control panel to manage your Tor server :)
+
+Note that you need to have git installed on your server, if not, run it before starting the Tor installation:
+```
+sudo apt install git
+```
+
