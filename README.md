@@ -21,6 +21,8 @@ Need help, visit our website https://impreza.host/ and chat with us or open a ti
 Script maintained and updated by Murilo / Impreza Host
 
 # How to use:
+
+Access your server via SSH and run:
 ```
 git clone https://github.com/imprezahost/aapanel-tor-network.git
 
