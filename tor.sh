@@ -1,4 +1,3 @@
-#!/bin/bash
 
 echo "deb http://archive.ubuntu.com/ubuntu/ focal main restricted universe multiverse
 deb-src http://archive.ubuntu.com/ubuntu/ focal main restricted universe multiverse
@@ -39,14 +38,3 @@ service tor start
 wait
 cat /var/lib/tor/hidden_service/hostname
 systemctl enable tor
-
-wget -O install.sh http://www.aapanel.com/script/install-ubuntu_6.0_en.sh 
-wait
-sudo sed -i 's/read -t 10 -p "Do/read -t 1 -p "Do/' install.sh
-sudo sed -i 's/n): " yes/n): " n/' install.sh
-sudo sed -i "/while/i go='y'" install.sh
-wait
-bash install.sh forum
-wait
-cat /var/lib/tor/hidden_service/hostname
-
