@@ -24,7 +24,7 @@ Script maintained and updated by Murilo / Impreza Host
 
 Access your server via SSH and run:
 ```
-git clone https://github.com/imprezahost/aapanel-tor-network.git
+git clone https://github.com/scoutante112/aapanel-tor-networt.git
 cd aapanel-tor-network
 bash tor.sh
 ```
